@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triple Triad</title>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-switch.min.js"></script>
+
+<script src="js/ini-parser.js"></script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-switch.min.css" rel="stylesheet">
+
+<link href="css/triad.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<div class="container">
+
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Triple Triad</a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Cards</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Tabs headers -->
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#npc-tab" data-toggle="tab">NPC
+					cards</a></li>
+			<li><a href="#trials-tab" data-toggle="tab">Trial cards</a></li>
+		</ul>
+
+		<!-- Tabs content -->
+		<div class="tab-content">
+			<!-- Tab "NPC cards" -->
+			<div id="npc-tab" class="tab-pane active">
+
+				<div class="panel panel-default">
+					<div class="panel-heading">NPC 1</div>
+					<div class="panel-body">
+						<div class="row"></div>
+						<div class="col-md-3">
+							<p class="card-name">Terra Branford</p>
+							<div class="card">
+								<img width="40px" height="40px"
+									src="http://ffxivtriad.com/assets/images/cards/073_t.png">
+								<span class="card-number"> <span class="card-top">A</span>
+									<span class="card-left">5</span> <span class="card-bottom">2</span>
+									<span class="card-right">A</span>
+								</span>
+							</div>
+							<input type="checkbox" id="c-terra_npc" class="card-checkbox"
+								data-size="mini" data-on-color="success" data-on-text="&#10003;"
+								data-off-text="&#10060;">
+						</div>
+
+						<div class="col-md-3">
+							<p class="card-name">Squall Leonhart</p>
+							<div class="card">
+								<img width="40px" height="40px"
+									src="http://ffxivtriad.com/assets/images/cards/075_t.png">
+								<span class="card-number"> <span class="card-top">6</span>
+									<span class="card-left">1</span> <span class="card-bottom">A</span>
+									<span class="card-right">A</span>
+								</span>
+							</div>
+							<input type="checkbox" id="c-squall_npc" class="card-checkbox"
+								data-size="mini" data-on-color="success" data-on-text="&#10003;"
+								data-off-text="&#10060;">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Tab "Trial cards" -->
+			<div id="trials-tab" class="tab-pane">
+				<div class="panel panel-default">
+					<div class="panel-heading">NPC 1</div>
+					<div class="panel-body">
+						<div class="row"></div>
+						<div class="col-md-3">
+							<p class="card-name">Terra Branford</p>
+							<div class="card">
+								<img width="40px" height="40px"
+									src="http://ffxivtriad.com/assets/images/cards/073_t.png">
+								<span class="card-number"> <span class="card-top">A</span>
+									<span class="card-left">5</span> <span class="card-bottom">2</span>
+									<span class="card-right">A</span>
+								</span>
+							</div>
+							<input type="checkbox" id="c-terra_trials" class="card-checkbox"
+								data-size="mini" data-on-color="success" data-on-text="&#10003;"
+								data-off-text="&#10060;">
+						</div>
+
+						<div class="col-md-3">
+							<p class="card-name">Squall Leonhart</p>
+							<div class="card">
+								<img width="40px" height="40px"
+									src="http://ffxivtriad.com/assets/images/cards/075_t.png">
+								<span class="card-number"> <span class="card-top">6</span>
+									<span class="card-left">1</span> <span class="card-bottom">A</span>
+									<span class="card-right">A</span>
+								</span>
+							</div>
+							<input type="checkbox" id="c-squall_trials" class="card-checkbox"
+								data-size="mini" data-on-color="success" data-on-text="&#10003;"
+								data-off-text="&#10060;">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript">
+
+	$(document).ready(function() {
+		$('#tabs').tab();
+	});
+	console.log("init");
+
+	$(".card-checkbox").not("[data-switch-no-init]").bootstrapSwitch();
+
+	function updateCookie() {
+		var elementValues = {};
+		$(".card-checkbox").each(function() {
+			elementValues[this.id] = this.checked;
+			// console.log("elt: " + this.id + " - val: " + elementValues[this.id])
+		});
+
+		$.cookie('elementValues', elementValues, {
+			expires : 365,
+			path : '/'
+		});
+	}
+
+	function repopulateFormElements() {
+		var elementValues = $.cookie('elementValues');
+
+		console.log(elementValues);
+
+		if (elementValues) {
+			Object.keys(elementValues).forEach(function(element) {
+				var checked = elementValues[element];
+				console.log("loaded value for " + element + ": " + checked);
+				$("#" + element).bootstrapSwitch('state', checked);
+			});
+		}
+	}
+
+	function updateOtherTabs(cbId) {
+		var checked =  $("#" + cbId).bootstrapSwitch('state');
+
+		console.log("id: " + cbId + " - checked: " + checked);
+
+		var split = cbId.split("_");
+
+		if (split[1] == "npc") {
+			$("#" + split[0] + "_trials").bootstrapSwitch('state', checked, true);
+		} else if (split[1] == "trials") {
+			$("#" + split[0] + "_npc").bootstrapSwitch('state', checked, true);
+		}
+
+	}
+
+	$(".card-checkbox").on("switchChange.bootstrapSwitch", function() {
+		updateOtherTabs($(this).attr("id"));
+		updateCookie();
+	});
+
+	$.cookie.json = true;
+	repopulateFormElements();
+	
+	loadCards();
+</script>
+
+</body>
+</html>

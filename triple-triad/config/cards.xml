@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cards>
+	<card id="terra" name="Terra Branford" top="A" left="5" right="A" bottom="2"/>
+	<card id="squall" name="Squall Leonhart" top="6" left="1" right="A" bottom="A"/>
+</cards>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<npcs>
+	<npc name="Merlwyb" location="Limsa">
+		<cards>
+			<card id="terra"/>
+			<card id="squall"/>
+		</cards>
+	</npc>
+</npcs>

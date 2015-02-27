@@ -1,0 +1,59 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.card>* {
+vertical-align: top;
+}
+
+.card>span {
+display: inline-block;
+}
+
+.card-number {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	line-height: 12px;
+	font-size: 12px;
+}
+
+.card-top {
+position: absolute;
+top: 5px;
+left: 12px;
+}
+
+.card-left {
+position: absolute;
+left: 5px;
+top: 14px;
+}
+
+.card-bottom {
+position: absolute;
+bottom: 5px;
+left: 12px;
+}
+
+.card-right {
+position: absolute;
+right: 15px;
+top: 14px;
+}
+
+.card-checkbox {
+  var-data-size: "mini";
+  var-data-on-color: "success";
+  var-data-on-text: "&#10003;";
+  var-data-off-text: "&#10060;";
+}
