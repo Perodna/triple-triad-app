@@ -37,7 +37,7 @@
 				<span class="card-right">${bottom}</span>
 			</span>
 		</div>
-		<input type="checkbox" id="c-${id}_npc" class="card-checkbox"
+		<input type="checkbox" id="c-${id}_npc" name="c-${id}_npc" class="card-checkbox"
 			data-size="mini" data-on-color="success" data-on-text="&#10003;"
 			data-off-text="&#10060;">
 	</div>
@@ -107,7 +107,7 @@
 									<span class="card-right">A</span>
 								</span>
 							</div>
-							<input type="checkbox" id="c-terra_trials" class="card-checkbox"
+							<input type="checkbox" id="c-terra_trials" name="c-terra_trials" class="card-checkbox"
 								data-size="mini" data-on-color="success" data-on-text="&#10003;"
 								data-off-text="&#10060;">
 						</div>
@@ -122,7 +122,7 @@
 									<span class="card-right">A</span>
 								</span>
 							</div> 
-							<input type="checkbox" id="c-squall_trials" class="card-checkbox"
+							<input type="checkbox" id="c-squall_trials" name="c-squall_trials" class="card-checkbox"
 								data-size="mini" data-on-color="success" data-on-text="&#10003;"
 								data-off-text="&#10060;">
 						</div>
@@ -164,17 +164,19 @@
 		}
 	}
 
-	function updateOtherTabs(cbId) {
-		var checked = $("#" + cbId).bootstrapSwitch('state');
+	function updateOtherTabs(cbId, state) {
+// 		var checked = $("#" + cbId).bootstrapSwitch('state');
+		var checked = state;
 		console.log("id: " + cbId + " - checked: " + checked);
 
 		var split = cbId.split("_");
-		if (split[1] == "npc") {
-			$("#" + split[0] + "_trials").bootstrapSwitch('state', checked,
-					true);
-		} else if (split[1] == "trials") {
-			$("#" + split[0] + "_npc").bootstrapSwitch('state', checked, true);
-		}
+		$("[name=" + split[0] + "_npc]").bootstrapSwitch('state', checked, true);
+		$("[name=" + split[0] + "_trials]").bootstrapSwitch('state', checked, true);
+// 		if (split[1] == "npc") {
+// 			$("[name=" + split[0] + "_trials]").bootstrapSwitch('state', checked, true);
+// 		} else if (split[1] == "trials") {
+// 			$("[name=" + split[0] + "_npc]").bootstrapSwitch('state', checked, true);
+// 		}
 	}
 
 	function init(npc) {
@@ -206,7 +208,7 @@
 
 		$(".card-checkbox").on("switchChange.bootstrapSwitch", function() {
 			console.log("change");
-			updateOtherTabs($(this).attr("id"));
+			updateOtherTabs($(this).attr("id"), $(this).bootstrapSwitch('state'));
 			updateCookie();
 		});
 

@@ -6,4 +6,10 @@
 			<card id="squall"/>
 		</cards>
 	</npc>
+	<npc id="esenna" name="Kan-E-Senna" location="Gridania">
+		<cards>
+			<card id="terra"/>
+			<card id="zidane"/>
+		</cards>
+	</npc>
 </npcs>

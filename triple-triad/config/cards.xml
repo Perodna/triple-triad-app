@@ -2,4 +2,5 @@
 <cards>
 	<card id="terra" name="Terra Branford" top="A" left="5" right="A" bottom="2"/>
 	<card id="squall" name="Squall Leonhart" top="6" left="1" right="A" bottom="A"/>
+	<card id="zidane" name="Zidane Tribal" top="5" left="8" right="A" bottom="6"/>
 </cards>
