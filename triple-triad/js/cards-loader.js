@@ -1,37 +1,4 @@
-function ini(str) {
-	return (function() {
-		var title, delim = /\[(.*?)\]/, trim = /^\s+|\s+$/g, lines = str
-				.replace(trim, '').split('\n'), op = [], o = {}, t, c;
-		for ( var i = 0, len = lines.length; i < len; i++) {
-			t = lines[i].replace(trim, '');
-			if (t.length === 0 || t[0] === ";" || t[0] === "#") {
-				continue;
-			}
-			op.push(t);
-		}
-		for ( var i = 0, len = op.length; i < len; i++) {
-			t = op[i];
-			if (delim.test(t)) {
-				title = t.replace(delim, '$1');
-				if (title) {
-					o[title] = {};
-				}
-				continue;
-			}
-			c = t.split('=');
-			if (title) {
-				o[title][c[0]] = c[1];
-			} else {
-				o[c[0]] = c[1];
-			}
-		}
-		return o;
-	})();
-}
-
-
-
-function loadCards() {
+function getCardsXml() {
 	// NOTE:  This function must return the value from calling the $.ajax() method
 	return $.ajax({
 		type : "GET",
@@ -43,7 +10,7 @@ function loadCards() {
 	});
 }
 
-function loadNPC() {
+function getNpcXml() {
 	// NOTE:  This function must return the value from calling the $.ajax() method
 	return $.ajax({
 		type : "GET",
@@ -55,9 +22,9 @@ function loadNPC() {
 	});
 }
 
-function parseCards(cardsXml, cards) {
+function loadCards(cardsXml, cards) {
 	
-	console.log(cardsXml);
+	console.log("Loading cards");
 	
 	$(cardsXml).find("card").each(function() {
 		console.log($(this).attr("id"));
@@ -74,7 +41,7 @@ function parseCards(cardsXml, cards) {
 	console.log(cards);
 }
 
-function parseNPC(npcXml, npc, cards) {
+function loadNpc(npcXml, npc, cards) {
 	// iterate through NPCs
 	$(npcXml).find("npc").each(function() {	
 		// get cards for this npc

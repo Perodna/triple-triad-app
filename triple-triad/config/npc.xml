@@ -1,15 +1,241 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <npcs>
-	<npc id="merlwyb" name="Merlwyb" location="Limsa">
+
+<!-- 5 pgs -->
+	<npc id="triadmaset" name="Triple Triad Master" location="Gold Saucer (4,7)">
 		<cards>
-			<card id="terra"/>
-			<card id="squall"/>
+			<card id="spriggan"/>
+			<card id="chocobo"/>
 		</cards>
 	</npc>
-	<npc id="esenna" name="Kan-E-Senna" location="Gridania">
+	
+<!-- 10 pgs -->
+	<npc id="maisenta" name="Maisenta" location="Gridania (11,11)">
 		<cards>
-			<card id="terra"/>
-			<card id="zidane"/>
+			<card id="sylph"/>
+			<card id="coblyn"/>
+			<card id="goobbue"/>
 		</cards>
 	</npc>
+	
+	<npc id="roger" name="Roger" location="Central Thanalan (19,20)">
+		<cards>
+			<card id="pudding"/>
+			<card id="morbol"/>
+		</cards>
+	</npc>
+	
+	<npc id="memeroon" name="Memeroon" location="Upper la Noscea (14,24)">
+		<cards>
+			<card id="amaljaa"/>
+			<card id="memeroon"/>
+		</cards>
+	</npc>
+	
+	<npc id="jonas" name="Jonas of the Three Spades" location="Gold Saucer (4,7)">
+		<cards>
+			<card id="ixal"/>
+			<card id="moogle"/>
+		</cards>
+	</npc>
+	
+	<!-- 15 pgs -->
+	<npc id="guhtwint" name="Guhtwint of the Three Diamonds" location="Gold Saucer (4,6)">
+		<cards>
+			<card id="scarface"/>
+			<card id="chocobo"/>
+		</cards>
+	</npc>
+	
+	<npc id="miounne" name="Mother Miounne" location="Gridania (11,13)">
+		<cards>
+			<card id="goobbue"/>
+			<card id="miounne"/>
+			<card id="sylph"/>
+		</cards>
+	</npc>
+	
+	<npc id="fhobhas" name="F'hobhas" location="Central Thanalan (23,13)">
+		<cards>
+			<card id="mutamix"/>
+		</cards>
+	</npc>
+	
+	<npc id="wymond" name="Wymond" location="Ul'dah - Steps of Nald (9,8)">
+		<cards>
+			<card id="coblyn"/>
+		</cards>
+	</npc>
+	
+	<npc id="momodi" name="Momodi Modi" location="Ul'dag - Steps of Nald (11,9)">
+		<cards>
+			<card id="momodi"/>
+			<card id="goobbue"/>
+		</cards>
+	</npc>
+	
+<!-- 20 pgs -->
+	<npc id="aurifort" name="Aurifort of the Three Clubs" location="Gold Saucer (4,7)">
+		<cards>
+			<card id="goobbue"/>
+			<card id="scarface"/>
+		</cards>
+	</npc>
+	
+	<npc id="trachtoum" name="Trachtoum" location="Lower la Noscea (35,15)">
+		<cards>
+			<card id="titan"/>
+			<card id="moogle"/>
+		</cards>
+	</npc>
+	
+	<npc id="helmhart" name="Helmhart" location="Eastern Thanalan (20,21)">
+		<cards>
+			<card id="gerolt"/>
+			<card id="hildibrand"/>
+			<card id="ultros"/>
+		</cards>
+	</npc>
+	
+	<npc id="mimidoa" name="Mimidoa" location="Lower la Noscea (25,34)">
+		<cards>
+			<card id="biggswedge"/>
+		</cards>
+	</npc>
+	
+	<npc id="joellaut" name="Joellaut" location="Coerthas Central Highlands (13,15)">
+		<cards>
+			<card id="alphinaudalisaie"/>
+			<card id="ixal"/>
+			<card id="behemoth"/>
+		</cards>
+	</npc>
+	
+	<npc id="fufulupa" name="Fufulupa" location="Wstern Thanalan (22, 17)">
+		<cards>
+			<card id="thancred"/>
+		</cards>
+	</npc>
+	
+	<npc id="baderon" name="Baderon" location="Limsa Lominsa Uppder Decks (11,11)">
+		<cards>
+			<card id="baderon"/>
+		</cards>
+	</npc>
+	
+	<npc id="piranault" name="Piranault" location="East Sroud (17,26)">
+		<cards>
+			<card id="frixio"/>
+			<card id="succubus"/>
+		</cards>
+	</npc>
+	
+<!-- 25 pgs -->
+	<npc id="sezul" name="Sezul Totoloc" location="North Shroud (24, 23)">
+		<cards>
+			<card id="biggswedge"/>
+			<card id="cid"/>
+			<card id="behemoth"/>
+		</cards>
+	</npc>
+	
+	<npc id="landenel" name="Landenel" location="South Shroud (16,28)">
+		<cards>
+			<card id="odin"/>
+			<card id="titan"/>
+		</cards>
+	</npc>
+	
+	<npc id="ruhtwyda" name="Ruhtwida of the Three Hearts" location="Gold Saucer (3,7)">
+		<cards>
+			<card id="urianger"/>
+			<card id="godbert"/>
+		</cards>
+	</npc>
+	
+	<npc id="buscarron" name="Buscarron" location="South Shroud (19,19)">
+		<cards>
+			<card id="papalymoyda"/>
+			<card id="rayaruhn"/>
+		</cards>
+	</npc>
+	
+	<npc id="ourdilic" name="Ourdilic" location="Coerthas Central Highlands (6,22)">
+		<cards>
+			<card id="bluedragon"/>
+			<card id="behemoth"/>
+		</cards>
+	</npc>
+	
+	<npc id="marcette" name="Marcette" location="Central Shroud (16,18))">
+		<cards>
+			<card id="frixio"/>
+			<card id="garuda"/>
+		</cards>
+	</npc>
+	
+<!-- 30 pgs -->
+
+	<npc id="hab" name="Hab" location="Southern Thanalan (24, 40)">
+		<cards>
+			<card id="godbert"/>
+			<card id="thancred"/>
+			<card id="hildibrand"/>
+		</cards>
+	</npc>
+	
+	<npc id="vorsaile" name="Vorsaile Heuloix" location="New Gridania (9, 11)">
+		<cards>
+			<card id="ramuh"/>
+			<card id="kanesenna"/>
+			<card id="papalymoyda"/>
+		</cards>
+	</npc>
+	
+	<npc id="swift" name="Swift" location="Ul'dah - Steps of Nald (8,8)">
+		<cards>
+			<card id="ifrit"/>
+			<card id="alphinaudalisaie"/>
+			<card id="raubahn"/>
+		</cards>
+	</npc>
+	
+	<npc id="rashaht" name="R'Ashaht Rhiki" location="Limsa Lominsa - Upper Decks (13,12)">
+		<cards>
+			<card id="merlwyb"/>
+			<card id="yshtola"/>
+			<card id="leviathan"/>
+		</cards>
+	</npc>
+	
+	<npc id="gegeruju" name="Gegeruju" location="Eastern la Noscea (33,30))">
+		<cards>
+			<card id="minfilia"/>
+			<card id="yshtola"/>
+		</cards>
+	</npc>
+	
+	<npc id="kingelmer" name="King Elmer III" location="Gold Saucer (3,7)">
+		<cards>
+			<card id="godbert"/>
+			<card id="bahamut"/>
+		</cards>
+	</npc>
+	
+	<npc id="rowena" name="Rowema" location="Mor Dhona (21,5)">
+		<cards>
+			<card id="louisoix"/>
+			<card id="gerolt"/>
+		</cards>
+	</npc>
+	
+	<npc id="imperial" name="Indolent Imperial" location="Mor Dhona (11,17)">
+		<cards>
+			<card id="livia"/>
+			<card id="rhitahtyn"/>
+			<card id="nero"/>
+			<card id="gaius"/>
+		</cards>
+	</npc>
+
 </npcs>

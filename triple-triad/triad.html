@@ -14,12 +14,12 @@
 <script src="js/jquery.cookie.js" type="text/javascript"></script>
 <script src="js/jquery.tmpl.min.js" type="text/javascript"></script>
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-switch.css" rel="stylesheet">
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Bootstrap -->
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/bootstrap-switch.js" type="text/javascript"></script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-switch.css" rel="stylesheet">
 
 <script src="js/cards-loader.js" type="text/javascript"></script>
 
@@ -29,7 +29,7 @@
 		<p class="card-name">${name}</p>
 		<div class="card">
 			<img width="40px" height="40px"
-				src="img/cards/card_${id}.png">
+				src="img/cards/${id}.png">
 			<span class="card-number">
 				<span class="card-top">${top}</span>
 				<span class="card-left">${left}</span>
@@ -37,7 +37,7 @@
 				<span class="card-right">${right}</span>
 			</span>
 		</div>
-		<input type="checkbox" id="c-${id}_npc" name="c-${id}_npc" class="card-checkbox"
+		<input type="checkbox" id="c-${id}" name="c-${id}" class="card-checkbox"
 			data-size="mini" data-on-color="success" data-on-text="&#10003;"
 			data-off-text="&#10060;">
 	</div>
@@ -101,13 +101,13 @@
 							<p class="card-name">Terra Branford</p>
 							<div class="card">
 								<img width="40px" height="40px"
-									src="http://ffxivtriad.com/assets/images/cards/073_t.png">
+									src="img/cards/terra.png">
 								<span class="card-number"> <span class="card-top">A</span>
 									<span class="card-left">5</span> <span class="card-bottom">2</span>
 									<span class="card-right">A</span>
 								</span>
 							</div>
-							<input type="checkbox" id="c-terra_trials" name="c-terra_trials" class="card-checkbox"
+							<input type="checkbox" id="c-terra" name="c-terra" class="card-checkbox"
 								data-size="mini" data-on-color="success" data-on-text="&#10003;"
 								data-off-text="&#10060;">
 						</div>
@@ -116,13 +116,13 @@
 							<p class="card-name">Squall Leonhart</p>
 							<div class="card">
 								<img width="40px" height="40px"
-									src="http://ffxivtriad.com/assets/images/cards/075_t.png">
+									src="img/cards/squall.png">
 								<span class="card-number"> <span class="card-top">6</span>
 									<span class="card-left">1</span> <span class="card-bottom">A</span>
 									<span class="card-right">A</span>
 								</span>
 							</div> 
-							<input type="checkbox" id="c-squall_trials" name="c-squall_trials" class="card-checkbox"
+							<input type="checkbox" id="c-squall" name="c-squall" class="card-checkbox"
 								data-size="mini" data-on-color="success" data-on-text="&#10003;"
 								data-off-text="&#10060;">
 						</div>
@@ -141,11 +141,11 @@
 	function updateCookie() {
 		var elementValues = {};
 		$(".card-checkbox").each(function() {
-			elementValues[this.id] = this.checked;
+			elementValues[this.name] = this.checked;
 		});
 
 		$.cookie('elementValues', elementValues, {
-			expires : 7,
+			expires : 10000,
 			path : '/'
 		});
 	}
@@ -159,24 +159,14 @@
 			Object.keys(elementValues).forEach(function(element) {
 				var checked = elementValues[element];
 				console.log("loaded value for " + element + ": " + checked);
-				$("#" + element).bootstrapSwitch('state', checked);
+				$("[name=" + element + "]").bootstrapSwitch('state', checked);
 			});
 		}
 	}
 
-	function updateOtherTabs(cbId, state) {
-// 		var checked = $("#" + cbId).bootstrapSwitch('state');
-		var checked = state;
-		console.log("id: " + cbId + " - checked: " + checked);
-
-		var split = cbId.split("_");
-		$("[name=" + split[0] + "_npc]").bootstrapSwitch('state', checked, true);
-		$("[name=" + split[0] + "_trials]").bootstrapSwitch('state', checked, true);
-// 		if (split[1] == "npc") {
-// 			$("[name=" + split[0] + "_trials]").bootstrapSwitch('state', checked, true);
-// 		} else if (split[1] == "trials") {
-// 			$("[name=" + split[0] + "_npc]").bootstrapSwitch('state', checked, true);
-// 		}
+	function updateOtherCheckboxes(cardCbName, state) {
+		console.log("id: " + cardCbName + " - checked: " + state);
+		$("[name=" + cardCbName + "]").bootstrapSwitch('state', state, true);
 	}
 
 	function init(npc) {
@@ -201,20 +191,21 @@
 			name : "Minfilia",
 			location : "Mod Dhona"
 		} ];
-
 		console.log(testData);
 
+		
 		$("#npc-template").tmpl(npc).appendTo("#npc-tab");
 
-		$(".card-checkbox").on("switchChange.bootstrapSwitch", function() {
-			console.log("change");
-			updateOtherTabs($(this).attr("id"), $(this).bootstrapSwitch('state'));
-			updateCookie();
-		});
-
 		$('#tabs').tab();
+		
 		$(".card-checkbox").not("[data-switch-no-init]").bootstrapSwitch();
 		repopulateFormElements();
+		
+		$(".card-checkbox").on("switchChange.bootstrapSwitch", function() {
+			console.log("change");
+			updateOtherCheckboxes($(this).attr("name"), $(this).bootstrapSwitch('state'));
+			updateCookie();
+		});
 
 		console.log("end init");
 	}
@@ -227,9 +218,9 @@
 		var npcXml;
 		var cards = [];
 		var npc = [];
-		$.when(loadCards(), loadNPC()).done(function(cardsXml, npcXml) {
-			parseCards(cardsXml, cards);
-			parseNPC(npcXml, npc, cards);
+		$.when(getCardsXml(), getNpcXml()).done(function(cardsXml, npcXml) {
+			loadCards(cardsXml, cards);
+			loadNpc(npcXml, npc, cards);
 			init(npc);
 		});
 
