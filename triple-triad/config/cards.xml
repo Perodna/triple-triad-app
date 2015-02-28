@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <cards>
 	
-	<card id="dodo" no= "1" name="Dodo" top="4" left="4" right="2" bottom="3"/>
-	<card id="tomberry" no= "2" name="Tomberry" top="2" left="2" right="2" bottom="7"/>
-	<card id="sabotender" no= "3" name="Sabotender" top="4" left="3" right="3" bottom="3"/>
-	<card id="spriggan" no= "4" name="Spriggan" top="2" left="4" right="3" bottom="4"/>
-	<card id="pudding" no= "5" name="Pudding" top="4" left="3" right="2" bottom="5"/>
-	<card id="bomb" no= "6" name="" top="3" left="3" right="5" bottom="3"/>
-	<card id="mandragora" no= "7" name="" top="4" left="3" right="2" bottom="5"/>
-	<card id="coblyn" no= "8" name="Coblyn" top="3" left="4" right="3" bottom="3"/>
-	<card id="morbol" no= "9" name="Morbol" top="5" left="2" right="2" bottom="5"/>
-	<card id="coeurl" no= "10" name="Coeurl" top="" left="" right="" bottom=""/>
-	<card id="ahriman" no= "11" name="Ahriman" top="" left="" right="" bottom=""/>
-	<card id="goobbue" no= "12" name="Goobbue" top="2" left="2" right="5" bottom="5"/>
-	<card id="chocobo" no= "13" name="Chocobo" top="8" left="1" right="7" bottom="2"/>
-	<card id="amaljaa" no= "14" name="Amalj'aa" top="1" left="1" right="4" bottom="7"/>
-	<card id="ixal" no= "15" name="Ixal" top="6" left="4" right="1" bottom="3"/>
-	<card id="sylph" no= "16" name="Sylph" top="2" left="4" right="4" bottom="5"/>
-	<card id="kobold" no= "17" name="Kobold" top="2" left="6" right="2" bottom="4"/>
-	<card id="sahagin" no= "18" name="Sahagin" top="4" left="3" right="5" bottom="3"/>
-	<card id="tataru" no= "19" name="Tataru Taru" top="7" left="2" right="2" bottom="3"/>
-	<card id="moogle" no= "20" name="Moogle" top="2" left="7" right="1" bottom="3"/>
-	<card id="siren" no= "21" name="Siren" top="3" left="2" right="6" bottom="7"/>
-	<card id="ultros" no="22" name="Ultros and Typhon" top="2" left="7" right="3" bottom="6"/>
-	<card id="demonwall" no= "23" name="Demon Wall" top="3" left="6" right="7" bottom="2"/>
-	<card id="succubus" no= "24" name="Succubus" top="7" left="6" right="3" bottom="2"/>
-	<card id="chimera" no= "25" name="Chimera" top="7" left="2" right="7" bottom="2"/>
-	<card id="bluedragon" no= "26" name="Blue Dragon" top="2" left="7" right="2" bottom="7"/>
-	<card id="scarface" no= "27" name="Scarface Bugaal Ja" top="6" left="6" right="6" bottom="2"/>
-	<card id="momodi" no= "28" name="Momodi Modi" top="7" left="3" right="5" bottom="5"/>
-	<card id="baderon" no= "29" name="Baderon Tenfingers" top="3" left="5" right="7" bottom="5"/>
-	<card id="miounne" no= "30" name="Mother Miounne" top="5" left="7" right="5" bottom="3"/>
-	<card id="livia" no= "31" name="Livia sas Junius" top="1" left="3" right="7" bottom="7"/>
-	<card id="rhitahtyn" no= "32" name="Rhitahtyn sas Arvina" top="7" left="7" right="1" bottom="3"/>
-	<card id="biggswedge" no= "33" name="Biggs and Wedge" top="5" left="5" right="3" bottom="7"/>
-	<card id="gerolt" no= "34" name="Gerolt" top="1" left="7" right="7" bottom="3"/>
-	<card id="frixio" no= "35" name="Frixio" top="6" left="6" right="2" bottom="6"/>
-	<card id="mutamix" no= "36" name="Mutamix" top="2" left="6" right="6" bottom="6"/>
-	<card id="memeroon" no= "37" name="Memeroon" top="6" left="2" right="6" bottom="6"/>
-	<card id="behemoth" no= "38" name="Behemoth" top="7" left="2" right="8" bottom="4"/>
-	<card id="gilgamesh" no= "39" name="Gilgamesh and Enkidu" top="8" left="3" right="3" bottom="7"/>
-	<card id="ifrit" no= "40" name="Ifrit" top="7" left="7" right="1" bottom="6"/>
-	<card id="titan" no= "41" name="Titan" top="1" left="6" right="7" bottom="7"/>
-	<card id="garuda" no= "42" name="Garuda" top="7" left="7" right="6" bottom="1"/>
-	<card id="kingmog" no= "43" name="Good King Moogle XIII" top="7" left="1" right="6" bottom="7"/>
-	<card id="rayaruhn" no= "44" name="Raya-O-Senna and A-Ruhn-Senna" top="5" left="6" right="6" bottom="6"/>
-	<card id="godbert" no= "45" name="Godbert Manderville" top="6" left="6" right="6" bottom="5"/>
-	<card id="thancred" no= "46" name="Thancred" top="2" left="7" right="3" bottom="8"/>
-	<card id="nero" no= "47" name="Nero tol Scaeva" top="4" left="7" right="1" bottom="8"/>
-	<card id="papalymoyda" no= "48" name="Papalymo and Yda" top="3" left="2" right="7" bottom="8"/>
-	<card id="yshtola" no= "49" name="Y'shtola" top="7" left="4" right="8" bottom="1"/>
-	<card id="urianger" no= "50" name="Urianger" top="8" left="7" right="1" bottom="4"/>
-	<card id="ultima" no= "51" name="Ultima Weapon" top="7" left="1" right="8" bottom="9"/>
-	<card id="odin" no= "52" name="Odin" top="8" left="8" right="8" bottom="1"/>
-	<card id="ramuh" no= "53" name="Ramuh" top="8" left="8" right="1" bottom="8"/>
-	<card id="leviathan" no= "54" name="Leviathan" top="8" left="1" right="8" bottom="8"/>
-	<card id="shiva" no= "55" name="Shiva" top="1" left="8" right="8" bottom="8"/>
-	<card id="minfilia" no= "56" name="Minfilia" top="8" left="5" right="8" bottom="3"/>
-	<card id="lahabrea" no= "57" name="Lahabrea" top="4" left="8" right="9" bottom="4"/>
-	<card id="cid" no= "58" name="Cid Garlond" top="5" left="2" right="9" bottom="9"/>
-	<card id="alphinaudalisaie" no= "59" name="Alphinaud and Alisaie" top="9" left="9" right="3" bottom="3"/>
-	<card id="louisoix" no= "60" name="Louisoix Leveilleur" top="9" left="3" right="4" bottom="9"/>
-	<card id="bahamut" no= "61" name="Bahamut" top="9" left="6" right="5" bottom="9"/>
-	<card id="hildibrand" no= "62" name="Hildibrand and Nashu" top="1" left="8" right="8" bottom="A"/>
-	<card id="nanamo" no= "63" name="Nanamo Ul Namo" top="A" left="8" right="6" bottom="4"/>
-	<card id="gaius" no= "64" name="Gaius van Baelsar" top="4" left="9" right="A" bottom="5"/>
-	<card id="merlwyb" no= "65" name="Merlwyb Bloefhiswyn" top="5" left="3" right="9" bottom="A"/>
-	<card id="kanesenna" no= "66" name="Kan-E-Senna" top="9" left="7" right="A" bottom="1"/>
-	<card id="raubahn" no= "67" name="Raubahn Aldynn" top="6" left="A" right="2" bottom="9"/>
-	<card id="warriorlight" no= "68" name="Warrior of Light" top="A" left="A" right="2" bottom="5"/>
-	<card id="eirion" no= "69" name="Eirion" top="A" left="1" right="5" bottom="A"/>
-	<card id="onion" no= "70" name="Onion Knight" top="8" left="A" right="2" bottom="8"/>
-	<card id="cecil" no= "71" name="Cecil Harvey" top="4" left="A" right="A" bottom="4"/>
-	<card id="bartz" no= "72" name="Bartz Klauser" top="4" left="A" right="4" bottom="A"/>	
-	<card id="terra" no= "73" name="Terra Branford" top="A" left="5" right="A" bottom="2"/>
-	<card id="cloud" no= "74" name="Cloud Strife" top="9" left="8" right="A" bottom="9"/>
-	<card id="squall" no="75" name="Squall Leonhart" top="6" left="1" right="A" bottom="A"/>
-	<card id="zidane" no="76" name="Zidane Tribal" top="5" left="8" right="A" bottom="6"/>
-	<card id="tidus" no= "77" name="Tidus" top="A" left="9" right="7" bottom="1"/>
-	<card id="shantotto" no= "78" name="Shantotto" top="4" left="9" right="9" bottom="7"/>
-	<card id="vaan" no= "79" name="Vaan" top="A" left="5" right="A" bottom="2"/>
-	<card id="lightning" no="80" name="Lightning" top="9" left="A" right="1" bottom="7"/>
+	<card id="dodo" no= "1" name="Dodo" top="4" left="4" right="2" bottom="3" stars="1"/>
+	<card id="tomberry" no= "2" name="Tomberry" top="2" left="2" right="2" bottom="7" stars="1"/>
+	<card id="sabotender" no= "3" name="Sabotender" top="4" left="3" right="3" bottom="3" stars="1"/>
+	<card id="spriggan" no= "4" name="Spriggan" top="2" left="4" right="3" bottom="4" stars="1"/>
+	<card id="pudding" no= "5" name="Pudding" top="4" left="3" right="2" bottom="5" stars="1"/>
+	<card id="bomb" no= "6" name="" top="3" left="3" right="5" bottom="3" stars="1"/>
+	<card id="mandragora" no= "7" name="" top="4" left="3" right="2" bottom="5" stars="1"/>
+	<card id="coblyn" no= "8" name="Coblyn" top="3" left="4" right="3" bottom="3" stars="1"/>
+	<card id="morbol" no= "9" name="Morbol" top="5" left="2" right="2" bottom="5" stars="1"/>
+	<card id="coeurl" no= "10" name="Coeurl" top="" left="" right="" bottom="" stars="1"/>
+	<card id="ahriman" no= "11" name="Ahriman" top="" left="" right="" bottom="" stars="1"/>
+	<card id="goobbue" no= "12" name="Goobbue" top="2" left="2" right="5" bottom="5" stars="1"/>
+	<card id="chocobo" no= "13" name="Chocobo" top="8" left="1" right="7" bottom="2" stars="1"/>
+	<card id="amaljaa" no= "14" name="Amalj'aa" top="1" left="1" right="4" bottom="7" stars="1"/>
+	<card id="ixal" no= "15" name="Ixal" top="6" left="4" right="1" bottom="3" stars="1"/>
+	<card id="sylph" no= "16" name="Sylph" top="2" left="4" right="4" bottom="5" stars="1"/>
+	<card id="kobold" no= "17" name="Kobold" top="2" left="6" right="2" bottom="4" stars="1"/>
+	<card id="sahagin" no= "18" name="Sahagin" top="4" left="3" right="5" bottom="3" stars="1"/>
+	<card id="tataru" no= "19" name="Tataru Taru" top="7" left="2" right="2" bottom="3" stars="1"/>
+	<card id="moogle" no= "20" name="Moogle" top="2" left="7" right="1" bottom="3" stars="1"/>
+	<card id="siren" no= "21" name="Siren" top="3" left="2" right="6" bottom="7" stars="2"/>
+	<card id="ultros" no="22" name="Ultros and Typhon" top="2" left="7" right="3" bottom="6" stars="2"/>
+	<card id="demonwall" no= "23" name="Demon Wall" top="3" left="6" right="7" bottom="2" stars="2"/>
+	<card id="succubus" no= "24" name="Succubus" top="7" left="6" right="3" bottom="2" stars="2"/>
+	<card id="chimera" no= "25" name="Chimera" top="7" left="2" right="7" bottom="2" stars="2"/>
+	<card id="bluedragon" no= "26" name="Blue Dragon" top="2" left="7" right="2" bottom="7" stars="2"/>
+	<card id="scarface" no= "27" name="Scarface Bugaal Ja" top="6" left="6" right="6" bottom="2" stars="2"/>
+	<card id="momodi" no= "28" name="Momodi Modi" top="7" left="3" right="5" bottom="5" stars="2"/>
+	<card id="baderon" no= "29" name="Baderon Tenfingers" top="3" left="5" right="7" bottom="5" stars="2"/>
+	<card id="miounne" no= "30" name="Mother Miounne" top="5" left="7" right="5" bottom="3" stars="2"/>
+	<card id="livia" no= "31" name="Livia sas Junius" top="1" left="3" right="7" bottom="7" stars="2"/>
+	<card id="rhitahtyn" no= "32" name="Rhitahtyn sas Arvina" top="7" left="7" right="1" bottom="3" stars="2"/>
+	<card id="biggswedge" no= "33" name="Biggs and Wedge" top="5" left="5" right="3" bottom="7" stars="2"/>
+	<card id="gerolt" no= "34" name="Gerolt" top="1" left="7" right="7" bottom="3" stars="2"/>
+	<card id="frixio" no= "35" name="Frixio" top="6" left="6" right="2" bottom="6" stars="2"/>
+	<card id="mutamix" no= "36" name="Mutamix" top="2" left="6" right="6" bottom="6" stars="2"/>
+	<card id="memeroon" no= "37" name="Memeroon" top="6" left="2" right="6" bottom="6" stars="2"/>
+	<card id="behemoth" no= "38" name="Behemoth" top="7" left="2" right="8" bottom="4" stars="3"/>
+	<card id="gilgamesh" no= "39" name="Gilgamesh and Enkidu" top="8" left="3" right="3" bottom="7" stars="3"/>
+	<card id="ifrit" no= "40" name="Ifrit" top="7" left="7" right="1" bottom="6" stars="3"/>
+	<card id="titan" no= "41" name="Titan" top="1" left="6" right="7" bottom="7" stars="3"/>
+	<card id="garuda" no= "42" name="Garuda" top="7" left="7" right="6" bottom="1" stars="3"/>
+	<card id="kingmog" no= "43" name="Good King Moogle XIII" top="7" left="1" right="6" bottom="7" stars="3"/>
+	<card id="rayaruhn" no= "44" name="Raya-O-Senna and A-Ruhn-Senna" top="5" left="6" right="6" bottom="6" stars="3"/>
+	<card id="godbert" no= "45" name="Godbert Manderville" top="6" left="6" right="6" bottom="5" stars="3"/>
+	<card id="thancred" no= "46" name="Thancred" top="2" left="7" right="3" bottom="8" stars="3"/>
+	<card id="nero" no= "47" name="Nero tol Scaeva" top="4" left="7" right="1" bottom="8" stars="3"/>
+	<card id="papalymoyda" no= "48" name="Papalymo and Yda" top="3" left="2" right="7" bottom="8" stars="3"/>
+	<card id="yshtola" no= "49" name="Y'shtola" top="7" left="4" right="8" bottom="1" stars="3"/>
+	<card id="urianger" no= "50" name="Urianger" top="8" left="7" right="1" bottom="4" stars="3"/>
+	<card id="ultima" no= "51" name="Ultima Weapon" top="7" left="1" right="8" bottom="9" stars="4"/>
+	<card id="odin" no= "52" name="Odin" top="8" left="8" right="8" bottom="1" stars="4"/>
+	<card id="ramuh" no= "53" name="Ramuh" top="8" left="8" right="1" bottom="8" stars="4"/>
+	<card id="leviathan" no= "54" name="Leviathan" top="8" left="1" right="8" bottom="8" stars="4"/>
+	<card id="shiva" no= "55" name="Shiva" top="1" left="8" right="8" bottom="8" stars="4"/>
+	<card id="minfilia" no= "56" name="Minfilia" top="8" left="5" right="8" bottom="3" stars="4"/>
+	<card id="lahabrea" no= "57" name="Lahabrea" top="4" left="8" right="9" bottom="4" stars="4"/>
+	<card id="cid" no= "58" name="Cid Garlond" top="5" left="2" right="9" bottom="9" stars="4"/>
+	<card id="alphinaudalisaie" no= "59" name="Alphinaud and Alisaie" top="9" left="9" right="3" bottom="3" stars="4"/>
+	<card id="louisoix" no= "60" name="Louisoix Leveilleur" top="9" left="3" right="4" bottom="9" stars="4"/>
+	<card id="bahamut" no= "61" name="Bahamut" top="9" left="6" right="5" bottom="9" stars="5"/>
+	<card id="hildibrand" no= "62" name="Hildibrand and Nashu" top="1" left="8" right="8" bottom="A" stars="5"/>
+	<card id="nanamo" no= "63" name="Nanamo Ul Namo" top="A" left="8" right="6" bottom="4" stars="5"/>
+	<card id="gaius" no= "64" name="Gaius van Baelsar" top="4" left="9" right="A" bottom="5" stars="5"/>
+	<card id="merlwyb" no= "65" name="Merlwyb Bloefhiswyn" top="5" left="3" right="9" bottom="A" stars="5"/>
+	<card id="kanesenna" no= "66" name="Kan-E-Senna" top="9" left="7" right="A" bottom="1" stars="5"/>
+	<card id="raubahn" no= "67" name="Raubahn Aldynn" top="6" left="A" right="2" bottom="9" stars="5"/>
+	<card id="warriorlight" no= "68" name="Warrior of Light" top="A" left="A" right="2" bottom="5" stars="5"/>
+	<card id="eirion" no= "69" name="Eirion" top="A" left="1" right="5" bottom="A" stars="5"/>
+	<card id="onion" no= "70" name="Onion Knight" top="8" left="A" right="2" bottom="8" stars="5"/>
+	<card id="cecil" no= "71" name="Cecil Harvey" top="4" left="A" right="A" bottom="4" stars="5"/>
+	<card id="bartz" no= "72" name="Bartz Klauser" top="4" left="A" right="4" bottom="A" stars="5"/>	
+	<card id="terra" no= "73" name="Terra Branford" top="A" left="5" right="A" bottom="2" stars="5"/>
+	<card id="cloud" no= "74" name="Cloud Strife" top="9" left="8" right="A" bottom="9" stars="5"/>
+	<card id="squall" no="75" name="Squall Leonhart" top="6" left="1" right="A" bottom="A" stars="5"/>
+	<card id="zidane" no="76" name="Zidane Tribal" top="5" left="8" right="A" bottom="6" stars="5"/>
+	<card id="tidus" no= "77" name="Tidus" top="A" left="9" right="7" bottom="1" stars="5"/>
+	<card id="shantotto" no= "78" name="Shantotto" top="4" left="9" right="9" bottom="7" stars="5"/>
+	<card id="vaan" no= "79" name="Vaan" top="A" left="5" right="A" bottom="2" stars="5"/>
+	<card id="lightning" no="80" name="Lightning" top="9" left="A" right="1" bottom="7" stars="5"/>
 </cards>

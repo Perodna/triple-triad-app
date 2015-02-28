@@ -33,7 +33,8 @@ function loadCards(cardsXml, cards) {
 			top : $(this).attr("top"),
 			left : $(this).attr("left"),
 			right : $(this).attr("right"),
-			bottom : $(this).attr("bottom")
+			bottom : $(this).attr("bottom"),
+			stars : $(this).attr("stars")
 		};
 	});
 }
