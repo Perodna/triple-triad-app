@@ -222,7 +222,7 @@
 		</cards>
 	</npc>
 	
-	<npc id="rowena" name="Rowema" location="Mor Dhona (21,5)">
+	<npc id="rowena" name="Rowena" location="Mor Dhona (21,5)">
 		<cards>
 			<card id="louisoix"/>
 			<card id="gerolt"/>
