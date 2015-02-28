@@ -46,7 +46,19 @@
 
 <script id="npc-template" type="text/html">
 				<div class="panel panel-default" id="npc-${id}">
-					<div class="panel-heading">${name}</div>
+					<div class="panel-heading"><b>${name}</b>&nbsp;&nbsp;—&nbsp;&nbsp;${location}</div>
+					<div class="panel-body">
+						<div class="row"></div>
+
+						{{tmpl($data) "#card-template"}}
+
+					</div>
+				</div>
+</script>
+
+<script id="trial-template" type="text/html">
+				<div class="panel panel-default" id="trial-${id}">
+					<div class="panel-heading"><b>${name}</b></div>
 					<div class="panel-body">
 						<div class="row"></div>
 
@@ -93,42 +105,7 @@
 
 			<!-- Tab "Trial cards" -->
 			<div id="trials-tab" class="tab-pane">
-				<div class="panel panel-default">
-					<div class="panel-heading">NPC 1</div>
-					<div class="panel-body">
-						<div class="row"></div>
-						<div class="col-md-3">
-							<p class="card-name">Terra Branford</p>
-							<div class="card">
-								<img width="40px" height="40px"
-									src="img/cards/terra.png">
-								<span class="card-number"> <span class="card-top">A</span>
-									<span class="card-left">5</span> <span class="card-bottom">2</span>
-									<span class="card-right">A</span>
-								</span>
-							</div>
-							<input type="checkbox" id="c-terra" name="c-terra" class="card-checkbox"
-								data-size="mini" data-on-color="success" data-on-text="&#10003;"
-								data-off-text="&#10060;">
-						</div>
-
-						<div class="col-md-3">
-							<p class="card-name">Squall Leonhart</p>
-							<div class="card">
-								<img width="40px" height="40px"
-									src="img/cards/squall.png">
-								<span class="card-number"> <span class="card-top">6</span>
-									<span class="card-left">1</span> <span class="card-bottom">A</span>
-									<span class="card-right">A</span>
-								</span>
-							</div> 
-							<input type="checkbox" id="c-squall" name="c-squall" class="card-checkbox"
-								data-size="mini" data-on-color="success" data-on-text="&#10003;"
-								data-off-text="&#10060;">
-						</div>
-					</div>
-				</div>
-			
+				<!-- Content auto-generated from list of cards and npcs with #trial-template -->
 			</div>
 
 		</div>
@@ -169,7 +146,7 @@
 		$("[name=" + cardCbName + "]").bootstrapSwitch('state', state, true);
 	}
 
-	function init(npc) {
+	function init(npc, trials) {
 		console.log("init");
 
 		console.log(npc);
@@ -195,6 +172,7 @@
 
 		
 		$("#npc-template").tmpl(npc).appendTo("#npc-tab");
+		$("#trial-template").tmpl(trials).appendTo("#trials-tab");
 
 		$('#tabs').tab();
 		
@@ -218,10 +196,12 @@
 		var npcXml;
 		var cards = [];
 		var npc = [];
-		$.when(getCardsXml(), getNpcXml()).done(function(cardsXml, npcXml) {
+		var trials = [];
+		$.when(getCardsXml(), getNpcXml(), getTrialsXml()).done(function(cardsXml, npcXml, trialsXml) {
 			loadCards(cardsXml, cards);
 			loadNpc(npcXml, npc, cards);
-			init(npc);
+			loadTrials(trialsXml, trials, cards);
+			init(npc, trials);
 		});
 
 		console.log("after load call");

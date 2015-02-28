@@ -1,7 +1,8 @@
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
+
 
 .card {
 	height: 40px;
@@ -12,11 +13,11 @@ body {
 }
 
 .card>* {
-vertical-align: top;
+	vertical-align: top;
 }
 
 .card>span {
-display: inline-block;
+	display: inline-block;
 }
 
 .card-number {
@@ -28,32 +29,32 @@ display: inline-block;
 }
 
 .card-top {
-position: absolute;
-top: 5px;
-left: 12px;
+	position: absolute;
+	top: 5px;
+	left: 12px;
 }
 
 .card-left {
-position: absolute;
-left: 5px;
-top: 14px;
+	position: absolute;
+	left: 5px;
+	top: 14px;
 }
 
 .card-bottom {
-position: absolute;
-bottom: 5px;
-left: 12px;
+	position: absolute;
+	bottom: 5px;
+	left: 12px;
 }
 
 .card-right {
-position: absolute;
-right: 15px;
-top: 14px;
+	position: absolute;
+	right: 15px;
+	top: 14px;
 }
 
 .card-checkbox {
-  var-data-size: "mini";
-  var-data-on-color: "success";
-  var-data-on-text: "&#10003;";
-  var-data-off-text: "&#10060;";
+	var-data-size: "mini";
+	var-data-on-color: "success";
+	var-data-on-text: "&#10003;";
+	var-data-off-text: "&#10060;";
 }

@@ -1,8 +1,158 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <trials>
-	<triald id="" name="">
+	
+<!-- Trials -->	
+	<trial id="bowlembers" name="The Bowl of Embers">
 		<cards>
-			<card id=""/>
+			<card id="ifrit"/>
 		</cards>
-	</triald>
+	</trial>
+	
+	<trial id="navel" name="The Navel">
+		<cards>
+			<card id="titan"/>
+		</cards>
+	</trial>
+	
+	<trial id="howlingeye" name="The Howling Eye">
+		<cards>
+			<card id="garuda"/>
+		</cards>
+	</trial>
+	
+	<trial id="thornmarch" name="Thornmarch">
+		<cards>
+			<card id="kingmog"/>
+		</cards>
+	</trial>
+	
+	<trial id="whorleater" name="The Whorleater">
+		<cards>
+			<card id="leviathan"/>
+		</cards>
+	</trial>
+	
+	<trial id="strikingtree" name="The Striking Tree">
+		<cards>
+			<card id="ramuh"/>
+		</cards>
+	</trial>
+	
+	<trial id="akhafah" name="Akh Afah Amphiteater">
+		<cards>
+			<card id="shiva"/>
+		</cards>
+	</trial>
+	
+	<trial id="ultima" name="Ultima">
+		<cards>
+			<card id="ultima"/>
+		</cards>
+	</trial>
+	
+	<trial id="bigbridge" name="Battle on the Big Bridge">
+		<cards>
+			<card id="gilgamesh"/>
+		</cards>
+	</trial>
+	
+	<trial id="bigkeep" name="Battle in the Big Keep">
+		<cards>
+			<card id="bartz"/>
+		</cards>
+	</trial>
+	
+	<trial id="dragonneck" name="Dragon's Neck">
+		<cards>
+			<card id="ultros"/>
+			<card id="terra"/>
+		</cards>
+	</trial>
+	
+	<trial id="urth" name="Urth's Fount">
+		<cards>
+			<card id="odin"/>
+		</cards>
+	</trial>
+	
+<!-- Dungeons -->
+
+	<trial id="wanderer" name="The Wanderer's Palace">
+		<cards>
+			<card id="tomberry"/>
+		</cards>
+	</trial>
+	
+	<trial id="aurumvale" name="Aurum Vale">
+		<cards>
+			<card id="morbol"/>
+		</cards>
+	</trial>
+	
+	<trial id="dzemael" name="Dzemael Darkhold">
+		<cards>
+			<card id="ahriman"/>
+		</cards>
+	</trial>
+	
+	<trial id="satasha" name="satasha">
+		<cards>
+			<card id="sahagin"/>
+		</cards>
+	</trial>
+	
+	<trial id="sirius" name="Pharaoh Sirius">
+		<cards>
+			<card id="siren"/>
+		</cards>
+	</trial>
+	
+	<trial id="wod" name="World of Darkness">
+		<cards>
+			<card id="onion"/>
+		</cards>
+	</trial>
+	
+	<trial id="amdapor" name="Amdapor Keep">
+		<cards>
+			<card id="demonwall"/>
+		</cards>
+	</trial>
+	
+	<trial id="haukke" name="Haukke Manor">
+		<cards>
+			<card id="succubus"/>
+		</cards>
+	</trial>
+	
+	<trial id="cuttercry" name="Cutter's Cry">
+		<cards>
+			<card id="chimera"/>
+		</cards>
+	</trial>
+	
+	<trial id="stonevigil" name="Stone Vigil">
+		<cards>
+			<card id="bluedragon"/>
+		</cards>
+	</trial>
+	
+<!-- Story -->
+	<trial id="castrum" name="Castrum Meridianum">
+		<cards>
+			<card id="livia"/>
+		</cards>
+	</trial>
+	
+	<trial id="praetorium" name="Praetorium">
+		<cards>
+			<card id="gaius"/>
+		</cards>
+	</trial>
+	
+	<trial id="cape" name="Cape Westwind">
+		<cards>
+			<card id="rhitahtyn"/>
+		</cards>
+	</trial>
 </trials>
