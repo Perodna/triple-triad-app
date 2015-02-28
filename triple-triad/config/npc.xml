@@ -67,7 +67,7 @@
 		</cards>
 	</npc>
 	
-	<npc id="momodi" name="Momodi Modi" location="Ul'dag - Steps of Nald (11,9)">
+	<npc id="momodi" name="Momodi Modi" location="Ul'dah - Steps of Nald (11,9)">
 		<cards>
 			<card id="momodi"/>
 			<card id="goobbue"/>
@@ -111,13 +111,13 @@
 		</cards>
 	</npc>
 	
-	<npc id="fufulupa" name="Fufulupa" location="Wstern Thanalan (22, 17)">
+	<npc id="fufulupa" name="Fufulupa" location="Western Thanalan (22, 17)">
 		<cards>
 			<card id="thancred"/>
 		</cards>
 	</npc>
 	
-	<npc id="baderon" name="Baderon" location="Limsa Lominsa Uppder Decks (11,11)">
+	<npc id="baderon" name="Baderon" location="Limsa Lominsa - Upper Decks (11,11)">
 		<cards>
 			<card id="baderon"/>
 		</cards>
