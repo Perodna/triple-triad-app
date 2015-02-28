@@ -16,12 +16,13 @@
 
 <!-- Bootstrap -->
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/bootstrap-switch.js" type="text/javascript"></script>
+<script src="js/bootstrap-switch.min.js" type="text/javascript"></script>
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-switch.css" rel="stylesheet">
+<link href="css/bootstrap.paper.min.css" rel="stylesheet">
+<link href="css/bootstrap-switch.min.css" rel="stylesheet">
 
 <script src="js/cards-loader.js" type="text/javascript"></script>
+<script src="js/cookie-saving.js" type="text/javascript"></script>
 
 <script id="card-template" type="text/html">
 	{{each cards}}
@@ -39,7 +40,7 @@
 		</div>
 		<input type="checkbox" id="c-${id}" name="c-${id}" class="card-checkbox"
 			data-size="mini" data-on-color="success" data-on-text="&#10003;"
-			data-off-text="&#10060;">
+			data-off-text="&#x2716;">
 	</div>
 	{{/each}}
 </script>
@@ -114,63 +115,11 @@
 
 
 <script type="text/javascript">
-
-	function updateCookie() {
-		var elementValues = {};
-		$(".card-checkbox").each(function() {
-			elementValues[this.name] = this.checked;
-		});
-
-		$.cookie('elementValues', elementValues, {
-			expires : 10000,
-			path : '/'
-		});
-	}
-
-	function repopulateFormElements() {
-		var elementValues = $.cookie('elementValues');
-
-		console.log(elementValues);
-
-		if (elementValues) {
-			Object.keys(elementValues).forEach(function(element) {
-				var checked = elementValues[element];
-				console.log("loaded value for " + element + ": " + checked);
-				$("[name=" + element + "]").bootstrapSwitch('state', checked);
-			});
-		}
-	}
-
 	function updateOtherCheckboxes(cardCbName, state) {
-		console.log("id: " + cardCbName + " - checked: " + state);
 		$("[name=" + cardCbName + "]").bootstrapSwitch('state', state, true);
 	}
 
-	function init(npc, trials) {
-		console.log("init");
-
-		console.log(npc);
-
-		var testData = [ {
-			id : "merlwyb",
-			name : "Merlwyb",
-			location : "Limsa",
-			cards : [ {
-				id : "terra",
-				name : "Terra Branford",
-				top : "A",
-				left : "5",
-				right : "A",
-				bottom : "2"
-			} ]
-		}, {
-			id : "minfilia",
-			name : "Minfilia",
-			location : "Mod Dhona"
-		} ];
-		console.log(testData);
-
-		
+	function init(npc, trials) {		
 		$("#npc-template").tmpl(npc).appendTo("#npc-tab");
 		$("#trial-template").tmpl(trials).appendTo("#trials-tab");
 
@@ -180,31 +129,24 @@
 		repopulateFormElements();
 		
 		$(".card-checkbox").on("switchChange.bootstrapSwitch", function() {
-			console.log("change");
 			updateOtherCheckboxes($(this).attr("name"), $(this).bootstrapSwitch('state'));
 			updateCookie();
 		});
-
-		console.log("end init");
 	}
 
 	$.cookie.json = true;
 
 	$(document).ready(function() {
-
-		var cardsXml;
-		var npcXml;
 		var cards = [];
 		var npc = [];
 		var trials = [];
+		
 		$.when(getCardsXml(), getNpcXml(), getTrialsXml()).done(function(cardsXml, npcXml, trialsXml) {
 			loadCards(cardsXml, cards);
 			loadNpc(npcXml, npc, cards);
 			loadTrials(trialsXml, trials, cards);
 			init(npc, trials);
 		});
-
-		console.log("after load call");
 	});
 </script>
 	

@@ -4,9 +4,6 @@ function getCardsXml() {
 		type : "GET",
 		url : "config/cards.xml",
 		dataType : "xml",
-		success : function(xml) {
-			console.log("loaded cards");
-		}
 	});
 }
 
@@ -16,9 +13,6 @@ function getNpcXml() {
 		type : "GET",
 		url : "config/npc.xml",
 		dataType : "xml",
-		success : function(xml) {
-			console.log("loaded npc");
-		}
 	});
 }
 
@@ -28,18 +22,11 @@ function getTrialsXml() {
 		type : "GET",
 		url : "config/trials.xml",
 		dataType : "xml",
-		success : function(xml) {
-			console.log("loaded trials");
-		}
 	});
 }
 
 function loadCards(cardsXml, cards) {
-	
-	console.log("Loading cards");
-	
 	$(cardsXml).find("card").each(function() {
-		console.log($(this).attr("id"));
 		cards[$(this).attr("id")] = {
 			id : $(this).attr("id"),
 			name : $(this).attr("name"),
@@ -49,8 +36,6 @@ function loadCards(cardsXml, cards) {
 			bottom : $(this).attr("bottom")
 		};
 	});
-	
-	console.log(cards);
 }
 
 function loadNpc(npcXml, npc, cards) {
@@ -70,8 +55,6 @@ function loadNpc(npcXml, npc, cards) {
 			cards : npcCards
 		});
 	});
-	
-	console.log(npc);
 }
 
 function loadTrials(trialsXml, trials, cards) {
@@ -90,6 +73,4 @@ function loadTrials(trialsXml, trials, cards) {
 			cards : trialCards
 		});
 	});
-	
-	console.log(trials);
 }
