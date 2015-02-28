@@ -77,6 +77,12 @@
 	
 <!-- Dungeons -->
 
+	<trial id="wod" name="World of Darkness">
+		<cards>
+			<card id="onion"/>
+		</cards>
+	</trial>
+
 	<trial id="wanderer" name="The Wanderer's Palace">
 		<cards>
 			<card id="tomberry"/>
@@ -95,7 +101,7 @@
 		</cards>
 	</trial>
 	
-	<trial id="satasha" name="satasha">
+	<trial id="satasha" name="Satasha">
 		<cards>
 			<card id="sahagin"/>
 		</cards>
@@ -104,12 +110,6 @@
 	<trial id="sirius" name="Pharaoh Sirius">
 		<cards>
 			<card id="siren"/>
-		</cards>
-	</trial>
-	
-	<trial id="wod" name="World of Darkness">
-		<cards>
-			<card id="onion"/>
 		</cards>
 	</trial>
 	

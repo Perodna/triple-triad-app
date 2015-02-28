@@ -30,7 +30,7 @@
 	<card id="scarface" no= "27" name="Scarface Bugaal Ja" top="6" left="6" right="6" bottom="2"/>
 	<card id="momodi" no= "28" name="Momodi Modi" top="7" left="3" right="5" bottom="5"/>
 	<card id="baderon" no= "29" name="Baderon Tenfingers" top="3" left="5" right="7" bottom="5"/>
-	<card id="miounne" no= "30" name="Mther Miounne" top="5" left="7" right="5" bottom="3"/>
+	<card id="miounne" no= "30" name="Mother Miounne" top="5" left="7" right="5" bottom="3"/>
 	<card id="livia" no= "31" name="Livia sas Junius" top="1" left="3" right="7" bottom="7"/>
 	<card id="rhitahtyn" no= "32" name="Rhitahtyn sas Arvina" top="7" left="7" right="1" bottom="3"/>
 	<card id="biggswedge" no= "33" name="Biggs and Wedge" top="5" left="5" right="3" bottom="7"/>
@@ -41,7 +41,7 @@
 	<card id="behemoth" no= "38" name="Behemoth" top="7" left="2" right="8" bottom="4"/>
 	<card id="gilgamesh" no= "39" name="Gilgamesh and Enkidu" top="8" left="3" right="3" bottom="7"/>
 	<card id="ifrit" no= "40" name="Ifrit" top="7" left="7" right="1" bottom="6"/>
-	<card id="titan" no= "41" name="Tian" top="1" left="6" right="7" bottom="7"/>
+	<card id="titan" no= "41" name="Titan" top="1" left="6" right="7" bottom="7"/>
 	<card id="garuda" no= "42" name="Garuda" top="7" left="7" right="6" bottom="1"/>
 	<card id="kingmog" no= "43" name="Good King Moogle XIII" top="7" left="1" right="6" bottom="7"/>
 	<card id="rayaruhn" no= "44" name="Raya-O-Senna and A-Ruhn-Senna" top="5" left="6" right="6" bottom="6"/>
