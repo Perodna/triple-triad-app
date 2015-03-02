@@ -34,7 +34,8 @@ function loadCards(cardsXml, cards) {
 			left : $(this).attr("left"),
 			right : $(this).attr("right"),
 			bottom : $(this).attr("bottom"),
-			stars : $(this).attr("stars")
+			stars : $(this).attr("stars"),
+			no : $(this).attr("no")
 		};
 	});
 }
@@ -74,4 +75,12 @@ function loadTrials(trialsXml, trials, cards) {
 			cards : trialCards
 		});
 	});
+}
+
+function toNumericArray(associativeArray) {
+	res = [];
+	for (item in associativeArray) {
+		res.push(associativeArray[item]);
+	}
+	return res;
 }

@@ -6,12 +6,12 @@
 	<card id="sabotender" no= "3" name="Sabotender" top="4" left="3" right="3" bottom="3" stars="1"/>
 	<card id="spriggan" no= "4" name="Spriggan" top="2" left="4" right="3" bottom="4" stars="1"/>
 	<card id="pudding" no= "5" name="Pudding" top="4" left="3" right="2" bottom="5" stars="1"/>
-	<card id="bomb" no= "6" name="" top="3" left="3" right="5" bottom="3" stars="1"/>
-	<card id="mandragora" no= "7" name="" top="4" left="3" right="2" bottom="5" stars="1"/>
+	<card id="bomb" no= "6" name="Bomb" top="3" left="3" right="5" bottom="3" stars="1"/>
+	<card id="mandragora" no= "7" name="Mandragora" top="4" left="3" right="2" bottom="5" stars="1"/>
 	<card id="coblyn" no= "8" name="Coblyn" top="3" left="4" right="3" bottom="3" stars="1"/>
 	<card id="morbol" no= "9" name="Morbol" top="5" left="2" right="2" bottom="5" stars="1"/>
-	<card id="coeurl" no= "10" name="Coeurl" top="" left="" right="" bottom="" stars="1"/>
-	<card id="ahriman" no= "11" name="Ahriman" top="" left="" right="" bottom="" stars="1"/>
+	<card id="coeurl" no= "10" name="Coeurl" top="2" left="5" right="5" bottom="2" stars="1"/>
+	<card id="ahriman" no= "11" name="Ahriman" top="5" left="2" right="5" bottom="2" stars="1"/>
 	<card id="goobbue" no= "12" name="Goobbue" top="2" left="2" right="5" bottom="5" stars="1"/>
 	<card id="chocobo" no= "13" name="Chocobo" top="8" left="1" right="7" bottom="2" stars="1"/>
 	<card id="amaljaa" no= "14" name="Amalj'aa" top="1" left="1" right="4" bottom="7" stars="1"/>
@@ -69,7 +69,7 @@
 	<card id="kanesenna" no= "66" name="Kan-E-Senna" top="9" left="7" right="A" bottom="1" stars="5"/>
 	<card id="raubahn" no= "67" name="Raubahn Aldynn" top="6" left="A" right="2" bottom="9" stars="5"/>
 	<card id="warriorlight" no= "68" name="Warrior of Light" top="A" left="A" right="2" bottom="5" stars="5"/>
-	<card id="eirion" no= "69" name="Eirion" top="A" left="1" right="5" bottom="A" stars="5"/>
+	<card id="firion" no= "69" name="Eirion" top="A" left="1" right="5" bottom="A" stars="5"/>
 	<card id="onion" no= "70" name="Onion Knight" top="8" left="A" right="2" bottom="8" stars="5"/>
 	<card id="cecil" no= "71" name="Cecil Harvey" top="4" left="A" right="A" bottom="4" stars="5"/>
 	<card id="bartz" no= "72" name="Bartz Klauser" top="4" left="A" right="4" bottom="A" stars="5"/>	

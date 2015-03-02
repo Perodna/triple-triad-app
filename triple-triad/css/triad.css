@@ -3,6 +3,14 @@ body {
 	padding-bottom: 20px;
 }
 
+.table tbody>tr>td.vert-align {
+	vertical-align: middle;
+}
+
+#cards-owned {
+	margin-top: 1em;
+}
+
 .card-rating {
 	vertical-align: top;
 	padding-top: 5px;
